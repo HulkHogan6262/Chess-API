@@ -1,6 +1,6 @@
 services:
   chess-api:
-    image: ghcr.io/hulkhogan6262/chess-api:latest
+    image: ghcr.io/hulkhogan6262/chess-api:main
     ports:
       - "8000:8000"
     environment:
