@@ -10,7 +10,7 @@ RUN pip3 install -r requirements.txt
 
 COPY . .
 
-ENV STOCKFISH_PATH='/usr/games/stockfish'
+ENV STOCKFISH_PATH='/usr/bin/stockfish'
 ENV PORT=8000
 ENV HOST=0.0.0.0
 

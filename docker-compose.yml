@@ -1,0 +1,8 @@
+services:
+  chess-api:
+    image: ghcr.io/hulkhogan6262/chess-api:latest
+    ports:
+      - "8000:8000"
+    environment:
+      - STOCKFISH_PATH=/usr/bin/stockfish
+    restart: unless-stopped
