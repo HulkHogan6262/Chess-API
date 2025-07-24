@@ -1,13 +1,12 @@
-FROM python:3.10
+FROM python:3.13.5-alpine3.22
 
-RUN apt-get update
-RUN apt-get install stockfish
+RUN apk add stockfish --repository=http://dl-cdn.alpinelinux.org/edge/testing
 
 WORKDIR /app
 
 COPY requirements.txt .
 
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 COPY . .
 
